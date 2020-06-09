@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Path-Finding Visualizer
+        </title>
+        <link rel="shortcut icon" type="image/png" href="icons_images/logo.png">
+        <link rel="stylesheet" type="text/css" href="css_files/pfv.css">
+    </head>
+    <body>
+        <div id="topblue">
+            
+            <div id="heading">
+                <h1>Path-Finding Visualizer</h1>
+            </div><br>
+
+            <div id="options">
+            
+                <select id="speed">
+                    <option class="speedOption" value="40" selected>Speed: Fast</option>
+                    <option class="speedOption" value="80">Speed: Medium</option>
+                    <option class="speedOption" value="120">Speed: Slow</option>
+                </select>
+
+                <select class="optiondivs" id="mazeSelect">
+                    <option class="mazeOption" value="0" selected hidden>Select Maze Pattern</option>
+                    <option class="mazeOption" value="3">Pseudo-Random Maze</option>
+                    <option class="mazeOption" value="1">Odd-Even Maze</option>
+                    <option class="mazeOption" value="2">Basic Staircase Maze</option>
+                </select>
+
+                <div class="optiondivs"><button id="go">Go Find Path!</button></div>
+    
+                <div class="optiondivs"><button id="clear">Clear the Grid</button></div>
+
+                <div class="optiondivs"><button id="clearWall">Clear the Walls</button></div>
+
+            </div>
+
+        </div><br>
+
+        <div id="middleSection">
+            
+            <div id="legend">
+                <div class="legends">
+                    <table class="inline"><tr><td class="symbol"></td></tr></table> &nbsp;Unvisited
+                </div>
+                <div class="legends">
+                    <table class="inline"><tr><td class="symbol" id="visited"></td></tr></table>&nbsp;Visited
+                </div>
+                <div class="legends">
+                    <table class="inline"><tr><td class="symbol" id="wall"></td></tr></table>&nbsp;Wall
+                </div>
+                <div class="legends">
+                    <table class="inline"><tr><td class="symbol" id="current"></td></tr></table>&nbsp;Current
+                </div>
+                <div class="legends">
+                    <img src="icons_images/source.png" class="img">&nbsp;<fix>Source</fix>
+                </div>
+                <div class="legends">
+                    <img src="icons_images/target.png" class="img">&nbsp;<fix>Destination</fix>
+                </div>
+            </div>
+
+            <div id="algos">
+                <div class="algoName" id="dijkstra">Dijkstra's Algorithm</div>
+                <div class="algoName" id="astar">A* Algorithm</div>
+                <div class="algoName" id="swarm">Bi-Directional BFS</div>
+            </div>
+
+        </div>
+
+        <div id="title">
+            <h2>Visualize Path Finding Algorithms</h2>
+        </div>
+
+        <table id="table"></table>
+
+        <script src="js_files/js_classes.js"></script>
+        <script src="js_files/maze.js"></script>
+        <script src="js_files/speed.js"></script>
+        <script src="js_files/dij.js"></script>
+        <script src="js_files/swarm.js"></script>
+        <script src="js_files/pfv.js"></script>
+        <script src="js_files/astar.js"></script>
+    </body>
+</html>
