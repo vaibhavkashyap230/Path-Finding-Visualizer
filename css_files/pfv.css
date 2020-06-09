@@ -1,0 +1,245 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: none;
+}
+
+body
+{
+    margin-left: 0px;
+}
+
+#topblue
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(52,73,94);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 120px;
+}
+
+#heading
+{
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#options
+{
+    margin-left: 17%;
+    display: flex;
+    flex-direction: row;
+}
+
+.optiondivs
+{
+    margin-right: 100px;
+}
+
+#speed
+{
+    margin-right: 50px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 120px;
+}
+
+.speedOption
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(52,73,94);    
+}
+
+#mazeSelect
+{
+    margin-right: 50px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mazeOption
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(52,73,94);
+}
+
+button
+{
+    padding: 10px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+#go
+{
+    background-color: rgb(26,188,156);
+    width: 130px;
+}
+
+#clear
+{
+    width: 150px;
+}
+
+#clearWall
+{
+    width: 150px;
+}
+
+.path
+{
+    border: 0px;
+}
+
+#middleSection
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(52,73,94);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#legend
+{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+
+.legends
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inline
+{
+    display: inline;
+    position: relative;
+    bottom: 20px;
+}
+
+.symbol
+{
+    height: 25px;
+    width: 25px;
+}
+
+#algos
+{
+    position: relative;
+    bottom: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.algoName
+{
+    margin-left: 50px;
+    transition: all ease-in-out;
+    cursor: pointer;
+}
+
+.algoName:hover
+{
+    color: red;
+
+}
+
+#visited
+{
+    background-color: rgb(64,206,227);
+}
+
+#wall
+{
+    background-color: rgb(12,53,71);
+}
+
+#current
+{
+    background-color: yellow;
+}
+
+.img
+{
+    width: 25px;
+    position: relative;
+    bottom: 5px;
+}
+
+fix
+{
+    position: relative;
+    bottom: 10px;
+}
+
+#title
+{
+    text-align: center;
+    font-size: 1.25rem;
+    color: blueviolet;
+    position: relative;
+    bottom: 10px;
+}
+
+#table,tr,td
+{
+    border: 1.5px solid rgb(175,216,248);
+    table-layout: fixed;
+}
+
+#table
+{
+    position: absolute;
+    bottom: 10px;
+    width: 98vw;
+    left: 15px;
+    table-layout: fixed;
+}
+
+#table:first-child
+{
+    height: 25px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    height: 25px;
+    width: 25px;
+    max-height: 25px;
+    max-width: 25px;
+    vertical-align: top;
+    padding: 0px;
+}
+
+td img
+{
+    width: 20px;
+} 
